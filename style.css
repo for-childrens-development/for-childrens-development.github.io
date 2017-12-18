@@ -1,4 +1,6 @@
 html {
+  background-color: black;
+  color: gray;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
@@ -8,15 +10,18 @@ html {
 
 input,
 textarea {
-  width: 100%;
+  width: 50%;
   padding: 5px;
   margin: 0;
   border-radius: 2px;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  background-color: black;
+  color: gray; }
 
 body {
   margin: 0;
   padding: 0; }
+
 
 *,
 *::before,
@@ -35,16 +40,13 @@ body {
 @media (min-width: 768px) {
   .container {
     width: 750px; } }
-
 @media (min-width: 992px) {
   .container {
     width: 970px; } }
-
 @media (min-width: 1200px) {
   .container {
     width: 1170px; } }
-
-.kodilla-heading--main {
+.heading--main {
   margin: 20px auto;
   text-align: center;
   font-size: 30px;
@@ -58,11 +60,6 @@ body {
   border: 1px solid #ccc;
   border-bottom: none;
   margin: 0; }
-
-.datatable__row-section-wrapper {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around; }
 
 .datatable__row:first-of-type {
   border-top-left-radius: 4px;
@@ -85,17 +82,22 @@ body {
   display: block; }
 
 .datatable__row--editing .datatable__field-value {
-  display: none; }
+  display: block;
+  /*display: none;*/ }
+
+.datatable__row--editing #name-value {
+  display: none;}
 
 .datatable__row--editing .datatable__button {
   display: none; }
 
-.datatable__row--editing .datatable__button--editing,
-.datatable__row--editing .datatable__button--card-creation {
+.datatable__row--editing .datatable__button--editing {
   display: block; }
 
 .datatable__row--add input,
 .datatable__row--add textarea {
+  background-color: black;
+  color: gray;
   display: block; }
 
 .datatable__field-value {
@@ -108,8 +110,7 @@ body {
   padding: 10px;
   flex-grow: 1; }
 
-.datatable__row-section--button-section,
-.datatable__row-section--trello-section {
+.datatable__row-section--button-section {
   margin-left: auto;
   align-self: center;
   flex-shrink: 1;
@@ -128,8 +129,8 @@ body {
   letter-spacing: 0.6px; }
 
 .datatable__button {
-  color: #fff;
-  background-color: #28a745;
+  color: white;
+  background-color: #0B94B6;
   display: block;
   margin-bottom: 5px;
   font-weight: 400;
@@ -137,16 +138,17 @@ body {
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: 1px solid transparent;
+  border: 1px solid white;
   padding: 8px 12px;
   font-size: 12px;
   min-width: 120px;
   line-height: 1.25;
   border-radius: 4px; }
 
-.datatable__select {
-  display: block;
-  margin-bottom: 10px; }
+.datatable__button:hover {
+  color: white;
+  background-color: #0EC6F4;
+}
 
 .datatable__tasks-container:empty {
   position: relative; }
@@ -155,4 +157,5 @@ body {
   content: 'Currently, there are no tasks available.'; }
 
 .template {
-  display: none; }
+  display: none;
+}
