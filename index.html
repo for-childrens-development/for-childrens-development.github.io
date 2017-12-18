@@ -1,17 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Kuba start page</title>
-  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <style>
-    .projects:hover{
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>STOCKS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&subset=latin-ext" rel="stylesheet">
 </head>
-<body style="background-color: #4c5364; color: white; font-family: Montserrat">
-  <h2>Jakub Gladysz</h2>
-  <p>Java projects:</p>
-  <p class="projects"><a style="text-decoration: none; color: white" href="https://kuba-04.github.io/stocks/">Stock screener</a></p>
+<body>
+<h1 class="heading heading--main">Stock Screener</h1>
+
+<main class="crud container">
+  <section class="datatable">
+    <h2>Add new</h2>
+    <form
+        class="datatable__row datatable__row--add"
+        method="POST"
+        action="https://stocks-app-kuba-04.herokuapp.com/v1/stocks"
+        data-stock-add-form
+    >
+
+      <fieldset class="datatable__row-section datatable__row-section--input-section">
+        <label class="datatable__input-label">
+          stock name
+        </label>
+        <input type="text" name="name" placeholder="Insert a stock name" required minlength="3">
+      </fieldset>
+
+      <fieldset class="datatable__row-section datatable__row-section--input-section">
+        <label class="datatable__input-label">
+          ticker
+        </label>
+        <input name="ticker" placeholder="Insert stock ticker" required minlength="3">
+      </fieldset>
+
+      <fieldset class="datatable__row-section datatable__row-section--button-section">
+        <button type="submit" data-stock-add-button class="datatable__button">Add a stock</button>
+      </fieldset>
+    </form>
+  </section>
+  <section class="datatable">
+    <h2>Shortlist</h2>
+    <div class="datatable__stocks-container" data-stocks-container></div>
+  </section>
+</main>
+
+<div class="template" data-datatable-row-template>
+  <form class="datatable__row" data-stock-id="0">
+    <fieldset class="datatable__row-section datatable__row-section--input-section" data-stock-name-section>
+      <label class="datatable__input-label">
+        stock name
+      </label>
+      <input type="text" name="name" placeholder="Insert a new stock name" data-stock-name-input required minlength="3">
+      <p class="datatable__field-value" id="name-value" data-stock-name-paragraph></p>
+    </fieldset>
+
+    <fieldset class="datatable__row-section datatable__row-section--input-section" data-stock-ticker-section>
+      <label class="datatable__input-label">
+        ticker
+      </label>
+      <p class="datatable__field-value" data-stock-ticker-paragraph></p>
+    </fieldset>
+
+    <fieldset class="datatable__row-section datatable__row-section--input-section" data-stock-price-section>
+      <label class="datatable__input-label">
+        price
+      </label>
+      <div><p class="datatable__field-value" data-stock-price-paragraph></p></div>
+    </fieldset>
+
+    <fieldset class="datatable__row-section datatable__row-section--button-section">
+      <button type="button" data-stock-submit-update-button class="datatable__button datatable__button--editing ">Submit update</button>
+      <button type="button" data-stock-edit-abort-button class="datatable__button datatable__button--editing">Abort update</button>
+      <button type="button" data-stock-edit-button class="datatable__button">Edit</button>
+      <button type="button" data-stock-delete-button class="datatable__button">Delete</button>
+    </fieldset>
+  </form>
+</div>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
