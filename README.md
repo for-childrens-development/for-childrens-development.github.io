@@ -1,4 +1,4 @@
-#Stock screener App
+## Stock screener App
 
 The application can be seen under this URL
 https://kuba-04.github.io/stocks/
