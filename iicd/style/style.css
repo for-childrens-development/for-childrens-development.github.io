@@ -1,0 +1,98 @@
+
+.en :lang(pl) {
+  display: none;
+}
+.pl :lang(en) {
+  display: none;
+}
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.main-section .logo {
+  margin-top: 3%;
+  height: 10vmin;
+  width: 10vmin;
+  opacity: 0.7;
+}
+
+.main-section h1 {
+  z-index: 1;
+  opacity: 0.7;
+  font-size: 6vmin;
+}
+
+hr {
+  background-color:white !important 
+}
+
+.main-section h2 {
+  opacity: 0.7;
+  font-size: 4vmin;
+}
+
+.main-section .button-group .btn {
+  opacity: 0.7;
+  margin-top: 2%;
+  margin-left: 4px;
+}
+
+.main-section .lang-btn {
+  position: absolute;
+  right: 2%;
+  margin-top: 2%;
+}
+
+.main-section .description {
+  opacity: 0.7;
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 3.5vmin;
+}
+
+.main-section .description .project-link {
+  text-decoration: none; 
+  color: white;
+}
+
+.main-section .description .project-link .project-link-img {
+  height: 5vmax;
+}
+
+/* .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+
+.color-overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.videosize {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
