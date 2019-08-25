@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <title>International Institute of Children's Development</title>
+</head>
+
+<body class="en">
+
+    <div class="container">
+        <div class="row">
+            <div class="main-section">
+                
+                <div class="lang-btn">                        
+                        <button type="button" class="btn btn-outline-light" onclick="document.body.className='en'">EN</button>
+                        <button type="button" class="btn btn-outline-light" onclick="document.body.className='pl'">PL</button>
+                </div>
+                
+                <div>
+                    <img class="logo" src="img/logo-notext-white.png" alt="logo">
+                </div>
+        
+                <h1 lang="en">International Institute<br/>of Children's Development</h1>
+                <h1 lang="pl">Międzynarodowy Instytut<br/>Rozwoju Dzieci</h1>
+
+        
+                <div><hr></div>
+                <h2 lang="en">Helping children grow with better education</h2>
+                <h2 lang="pl">Dbamy o rozwój dzieci poprzez lepszą edukację</h2>
+            
+                <div>
+                    <div class="color-overlay"></div>
+                    <video autoplay loop muted class="videosize">
+                        <source src="video/librafrica_school.mp4" type="video/mp4">
+                    </video>
+                </div>
+        
+                <div class="button-group">
+                    <button 
+                        type="button" 
+                        class="btn btn-lg btn-outline-light"
+                        onclick="document.getElementById('changing-txt-field').innerHTML='<p lang=en>Tutaj Justyna wrzuci ładny opis co to za fundacja i wgl o co tu chodzi:)</p><p lang=pl>Tutaj Justyna wrzuci ładny opis co to za fundacja i wgl o co tu chodzi:)</p><p lang=en> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p lang=pl>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>'; document.getElementById('project-link').style.display='none'">
+                        <span lang="en">About</span>
+                        <span lang="pl">O nas</span>
+                    </button>
+                    <button 
+                        type="button" 
+                        class="btn btn-lg btn-outline-light project-btn"
+                        onclick="document.getElementById('changing-txt-field').innerHTML='<p lang=en>We started a project in Uganda, where we found that the lack of education in rural areas is causing a stagnation of the growing populations. We believe education is the key. If we supply the local communities with books and various learning tools they will be able to work on their own development, and as a result, improve their standard of living. Please visit Librafrica website to learn more:</p><p lang=pl>Rozpoczęliśmy naszą działalność w Ugandzie, blabla bla...</p>'; document.getElementById('project-link').style.display='block'">
+                        <span lang="en">Projects</span>
+                        <span lang="pl">projekty</span>
+                    </button>
+                    <button 
+                        type="button" 
+                        class="btn btn-lg btn-outline-light"
+                        onclick="document.getElementById('changing-txt-field').innerHTML='<p lang=en>Phone: +48 881 657 690 </p><p lang=pl>Tel: +48 881 657 690 </p><p>Email: librafrica@gmail.com</p><p lang=en>If you would like to support us you can make a donation to the following bank account: </p><p lang=pl>Jeśli chciałbyś nas wspomóc, skontaktuj się z nami lub wesprzyj nas finansowo:</p><p>19 1020 1026 0000 1202 0267 0222</p>'; document.getElementById('project-link').style.display='none'">
+                        <span lang="en">Contact</span>
+                        <span lang="pl">Kontakt</span>
+                    </button>
+                    <div class="description" >
+                        <p id="changing-txt-field"></p>
+                        <div id=project-link style="display: none">
+                            <a class="project-link" href="http://librafrica.org" target="_blank">
+                                <p>Librafrica</p>
+                                <img class="project-link-img" src="img/kwiate-small.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
