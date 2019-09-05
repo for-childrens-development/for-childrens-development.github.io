@@ -96,3 +96,7 @@ hr {
   object-fit: cover;
   opacity: 0.2;
 }
+
+p.account {
+  margin-bottom: -1%; 
+}
