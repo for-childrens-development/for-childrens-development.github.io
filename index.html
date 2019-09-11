@@ -23,53 +23,55 @@
                     <button lang="pl" style="border:none;" type="button" class="btn btn-outline-light btn-language" onclick="document.body.className='en'">EN</button>
                 </div>
                 
-                <div>
-                    <img class="logo" src="img/logo-notext-white.png" alt="logo">
-                </div>
-        
-                <h1 lang="en">International Institute<br/>for Children's Development</h1>
-                <h1 lang="pl">Międzynarodowy Instytut<br/>Rozwoju Dzieci</h1>
-
-        
-                <div><hr></div>
-                <h2 lang="en">Helping children grow with better education</h2>
-                <h2 lang="pl">Dbamy o rozwój dzieci poprzez lepszą edukację</h2>
+                <div id="moveable-content">
+                    <div>
+                        <img class="logo" src="img/logo-notext-white.png" alt="logo">
+                    </div>
             
-                <div>
-                    <div class="color-overlay"></div>
-                    <video autoplay loop muted playsinline poster="img/iics_video_snapshot.png" class="videosize">
-                        <source src="video/librafrica_school.mp4" type="video/mp4">
-                    </video>
-                </div>
-        
-                <div class="button-group">
-                    <button 
-                        type="button" 
-                        class="btn btn-lg btn-outline-light"
-                        onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en></p><p lang=pl></p><p lang=en></p><p lang=pl></p>'; document.getElementById('project-link').style.display='none'">
-                        <span lang="en">About</span>
-                        <span lang="pl">O nas</span>
-                    </button>
-                    <button 
-                        type="button" 
-                        class="btn btn-lg btn-outline-light project-btn"
-                        onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en>We started a project in Uganda, where we found that the lack of education in rural areas is causing stagnation in growing populations. We believe education is the key. If we supply the local communities with books and various learning tools they will be able to work on their own development, and as a result, improve their standard of living. Please visit Librafrica website to learn more:</p><p lang=pl></p>'; document.getElementById('project-link').style.display='block'">
-                        <span lang="en">Projects</span>
-                        <span lang="pl">Projekty</span>
-                    </button>
-                    <button 
-                        type="button" 
-                        class="btn btn-lg btn-outline-light"
-                        onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en>Phone: +48 881 657 690 </p><p lang=pl>Tel: +48 881 657 690 </p><p>Email: justyna@forchildrensdevelopment.org</p><p lang=en>If you would like to support us you can make a donation to the following bank account: </p><p lang=pl>Jeśli chciałbyś nas wspomóc, skontaktuj się z nami lub wesprzyj nas finansowo:</p><p lang=en class=account>Account number: 41 1240 1037 1111 0010 9280 6310</p><p lang=pl class=account>Numer konta: 41 1240 1037 1111 0010 9280 6310</p><p class=account>IBAN: PL 41 1240 1037 1111 0010 9280 6310</p><p class=account>SWIFT/BIC: PKOPPLPW</p>'; document.getElementById('project-link').style.display='none'">
-                        <span lang="en">Contact</span>
-                        <span lang="pl">Kontakt</span>
-                    </button>
-                    <div class="description" >
-                        <p id="changing-txt-field"></p>
-                        <div id=project-link style="display: none">
-                            <a class="project-link" href="http://librafrica.org" target="_blank">
-                                <img class="project-link-img" src="img/kwiate-small.png" alt="logo">
-                            </a>
+                    <h1 lang="en">International Institute<br/>for Children's Development</h1>
+                    <h1 lang="pl">Międzynarodowy Instytut<br/>Rozwoju Dzieci</h1>
+    
+            
+                    <div><hr></div>
+                    <h2 lang="en">Helping children grow with better education</h2>
+                    <h2 lang="pl">Dbamy o rozwój dzieci poprzez lepszą edukację</h2>
+                
+                    <div>
+                        <div class="color-overlay"></div>
+                        <video autoplay loop muted playsinline poster="img/iics_video_snapshot.png" class="videosize">
+                            <source src="video/librafrica_school.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="button-group">
+                        <button 
+                            type="button" 
+                            class="btn btn-lg btn-outline-light"
+                            onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en></p><p lang=pl></p><p lang=en></p><p lang=pl></p>'; document.getElementById('project-link').style.display='none'">
+                            <span lang="en">About</span>
+                            <span lang="pl">O nas</span>
+                        </button>
+                        <button 
+                            type="button" 
+                            class="btn btn-lg btn-outline-light project-btn"
+                            onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en>We started a project in Uganda, where we found that the lack of education in rural areas is causing stagnation in growing populations. We believe education is the key. If we supply the local communities with books and various learning tools they will be able to work on their own development, and as a result, improve their standard of living. Please visit Librafrica website to learn more:</p><p lang=pl></p>'; document.getElementById('project-link').style.display='block'">
+                            <span lang="en">Projects</span>
+                            <span lang="pl">Projekty</span>
+                        </button>
+                        <button 
+                            type="button" 
+                            class="btn btn-lg btn-outline-light"
+                            onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en>Phone: +48 881 657 690 </p><p lang=pl>Tel: +48 881 657 690 </p><p>Email: justyna@forchildrensdevelopment.org</p><p lang=en>If you would like to support us you can make a donation to the following bank account: </p><p lang=pl>Jeśli chciałbyś nas wspomóc, skontaktuj się z nami lub wesprzyj nas finansowo:</p><p lang=en class=account>Account number: 41 1240 1037 1111 0010 9280 6310</p><p lang=pl class=account>Numer konta: 41 1240 1037 1111 0010 9280 6310</p><p class=account>IBAN: PL 41 1240 1037 1111 0010 9280 6310</p><p class=account>SWIFT/BIC: PKOPPLPW</p>'; document.getElementById('project-link').style.display='none'">
+                            <span lang="en">Contact</span>
+                            <span lang="pl">Kontakt</span>
+                        </button>
+                        <div class="description" >
+                            <p id="changing-txt-field"></p>
+                            <div id=project-link style="display: none">
+                                <a class="project-link" href="http://librafrica.org" target="_blank">
+                                    <img class="project-link-img" src="img/kwiate-small.png" alt="logo">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,5 +80,7 @@
     </div>
 
 </body>
+
+<script src="script/script.js"></script>
 
 </html>

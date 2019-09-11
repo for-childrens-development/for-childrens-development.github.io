@@ -36,7 +36,7 @@ hr {
 
 .main-section h2 {
   opacity: 0.7;
-  font-size: 4vmin;
+  font-size: 5vmin;
 }
 
 .main-section .button-group .btn {
@@ -54,9 +54,15 @@ hr {
 .main-section .description {
   opacity: 0.7;
   margin-top: 3%;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 3.5vmin;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: calc((vw) / 100);
+}
+
+@media screen and (min-width: 500px) {
+  .main-section .description {
+    font-size: 24px;
+  }
 }
 
 .main-section .description .project-link {
@@ -65,15 +71,14 @@ hr {
 }
 
 .main-section .description .project-link .project-link-img {
-  height: 5vmax;
+  height: 30vmin;
 }
 
-/* .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-} */
+@media screen and (min-width: 500px) {
+  .main-section .description .project-link .project-link-img {
+    height: 150px;
+  }
+}
 
 .color-overlay {
   position: absolute;
@@ -103,4 +108,24 @@ p.account {
 
 .btn-language {
   opacity: 0.7;
+}
+
+#moveable-content {
+  margin-top: 10%;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  #moveable-content {
+    margin-top: 50%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
 }
