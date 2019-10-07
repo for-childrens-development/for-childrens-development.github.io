@@ -18,9 +18,8 @@
 }
 
 .main-section .logo {
-  margin-top: 3%;
-  height: 10vmin;
-  width: 10vmin;
+  height: 25vmin;
+  width: 25vmin;
   opacity: 0.7;
 }
 
@@ -76,7 +75,7 @@ hr {
 
 @media screen and (min-width: 500px) {
   .main-section .description .project-link .project-link-img {
-    height: 150px;
+    height: 100px;
   }
 }
 
