@@ -5,3 +5,24 @@ Array.from(btn).forEach(element => {
         c.style.marginTop = '0%';
     },false);    
 });
+
+
+function displayElementHideList(el, list) {
+    var x = document.getElementById(el);
+    list.forEach(element => {
+        var y = document.getElementById(element);
+        y.style.display = "none";
+    });
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } 
+}
+
+function displayElement(el) {
+    var x = document.getElementById(el);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}

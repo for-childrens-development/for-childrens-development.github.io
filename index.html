@@ -27,14 +27,21 @@
 
 <body class="en">
 
+    <div>
+        <div class="color-overlay"></div>
+        <video autoplay loop muted playsinline poster="img/iics_video_snapshot-6.png" class="videosize">
+            <source src="video/librafrica_school.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="main-section">
                 
-                <div class="lang-btn">                        
+                <!-- <div class="lang-btn">                        
                     <button lang="en" style="border:none;" type="button" class="btn btn-outline-light btn-language" onclick="document.body.className='pl'">PL</button>
                     <button lang="pl" style="border:none;" type="button" class="btn btn-outline-light btn-language" onclick="document.body.className='en'">EN</button>
-                </div>
+                </div> -->
 
                 <div id="moveable-content">
                     <div>
@@ -48,56 +55,337 @@
                     <div><hr></div>
                     <h2 lang="en">Helping children grow with better education</h2>
                     <h2 lang="pl">Dbamy o rozwój dzieci poprzez lepszą edukację</h2>
-                
-                    <div>
-                        <div class="color-overlay"></div>
-                        <video autoplay loop muted playsinline poster="img/iics_video_snapshot-6.png" class="videosize">
-                            <source src="video/librafrica_school.mp4" type="video/mp4">
-                        </video>
-                    </div>
 
                     <div class="button-group">
                         <button 
                             type="button" 
                             class="btn btn-lg btn-outline-light"
-                            onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en></p><p lang=pl></p><p lang=en></p><p lang=pl></p>'; document.getElementById('project-link').style.display='none'">
+                            id="about-us-btn"
+                            onclick="displayElementHideList('about-us-list-section', ['about-you-list-section', 'projects-list-section', 'methodology-list-section', 'contact-section'])">
                             <span lang="en">About us</span>
                             <span lang="pl">O nas</span>
                         </button>
                         <button 
                             type="button" 
                             class="btn btn-lg btn-outline-light"
-                            onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en></p><p lang=pl></p><p lang=en></p><p lang=pl></p>'; document.getElementById('project-link').style.display='none'">
+                            onclick="displayElementHideList('about-you-list-section', ['about-us-list-section', 'projects-list-section', 'methodology-list-section', 'contact-section'])">
                             <span lang="en">About you</span>
                             <span lang="pl">O Tobie</span>
                         </button>
                         <button 
                             type="button" 
-                            class="btn btn-lg btn-outline-light project-btn"
-                            onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en>We started a project in Uganda, where we found that the lack of education in rural areas is causing stagnation in growing populations. We believe education is the key. If we supply the local communities with books and various learning tools they will be able to work on their own development, and as a result, improve their standard of living. Please visit Librafrica website to learn more:</p><p lang=pl></p>'; document.getElementById('project-link').style.display='block'">
+                            class="btn btn-lg btn-outline-light"
+                            onclick="displayElementHideList('projects-list-section', ['about-you-list-section', 'about-us-list-section', 'methodology-list-section', 'contact-section'])">
                             <span lang="en">Projects</span>
                             <span lang="pl">Projekty</span>
                         </button>
                         <button 
                             type="button" 
                             class="btn btn-lg btn-outline-light"
-                            onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en>We started a project in Uganda, where we found that the lack of education in rural areas is causing stagnation in growing populations. We believe education is the key. If we supply the local communities with books and various learning tools they will be able to work on their own development, and as a result, improve their standard of living. Please visit Librafrica website to learn more:</p><p lang=pl></p>'; document.getElementById('project-link').style.display='block'">
+                            onclick="displayElementHideList('methodology-list-section', ['about-you-list-section', 'projects-list-section', 'about-us-list-section', 'contact-section'])">
                             <span lang="en">Methodology</span>
                             <span lang="pl">Metodyka</span>
                         </button>
                         <button 
                             type="button" 
                             class="btn btn-lg btn-outline-light"
-                            onclick="this.blur(); document.getElementById('changing-txt-field').innerHTML='<p lang=en>Phone: +48 881 657 690 </p><p lang=pl>Tel: +48 881 657 690 </p><p>Email: info@forchildrensdevelopment.org</p><p lang=en>If you would like to support us you can make a donation to the following bank account: </p><p lang=pl>Jeśli chciałbyś nas wspomóc, skontaktuj się z nami lub wesprzyj nas finansowo:</p><p lang=en class=account>Account number: 41 1240 1037 1111 0010 9280 6310</p><p lang=pl class=account>Numer konta: 41 1240 1037 1111 0010 9280 6310</p><p class=account>IBAN: PL 41 1240 1037 1111 0010 9280 6310</p><p class=account>SWIFT/BIC: PKOPPLPW</p>'; document.getElementById('project-link').style.display='none'">
+                            onclick="displayElementHideList('contact-section', ['about-you-list-section', 'about-us-list-section', 'projects-list-section', 'methodology-list-section'])">
                             <span lang="en">Contact</span>
                             <span lang="pl">Kontakt</span>
                         </button>
-                        <div class="description" >
-                            <p id="changing-txt-field"></p>
-                            <div id=project-link style="display: none">
-                                <a class="project-link" href="http://librafrica.org" target="_blank">
-                                    <img class="project-link-img" src="img/kwiate-small.png" alt="Librafrica logo">
-                                </a>
+
+                        <div id="about-us-list-section" class="description" style="display: none;">
+                            <ul>
+                                <li><button class="btn btn-link" onclick="displayElement('team-section')">>> Team</button></li>
+                                    <div id="team-section" style="display: none;">
+                                        <p><b><i>“If you think you are too small to make a difference, try to sleep in the presence of a mosquito.”</i></b></p>
+                                        <p>We didn’t want to be another organization that would have to focus on collecting money for survival at the expense of children.</p>
+                                        <p>At the same time we know that “the harvest is plentiful, but the laborers are few” and the world needs more positive change makers!</p>
+                                        <p class="btn btn-link" onclick="displayElement('team-section-more')">read more</p>
+                                        <div id="team-section-more" style="display: none;">
+                                            <p>We all love children and care about their development. We know that childhood is not about good or bad grades. 
+                                                Good childhood is about love, understanding, passion, security, demanding and inspiring to growth. 
+                                                In every continent, in every country the needs of children are uncovered, sometimes even unnoticed. 
+                                                Where there is the lack of sense, egocentrism, dazzling consumption or lonely emptiness, 
+                                                we believe that the world needs more love that blossoms when it’s shared. Paradoxically, 
+                                                we all need to be the ones to receive, and to give - in order to develop our humanity.
+                                            </p>
+                                            <p><i><strong>Why us?</strong></i></p>
+                                            <p>We feel that we are so small like a mosquito, but our desire to share what we have empowers us
+                                                to forget about our limits and think more about a small difference we can make, together with you.
+                                            </p>
+                                            <p>
+                                                On our board we have a dreamer that wanted to be a Robin Hood while being a child while other children wanted to be famous and rich. 
+                                                JUSTYNA managed to work with a few most vulnerable small humans who suffer from hunger, disabilities and the world’s indifference 
+                                                in different parts of the world. So today she wants to connect people from different homes and continents, inspire them to contribute 
+                                                to small changes in concrete lives and explain why sharing is what the world needs. What children need. She is a founder of the organization and a head full of ideas.            
+                                            </p>
+                                            <p>justyna@forchildrensdevelopment.org</p>
+                                            <p>
+                                                We have a wonderful couple in our team as well. They both made outstanding careers in the international corporate world and 
+                                                now they want to share their skills with children. KASIA spent her last 10 years in Human Resources as a trainer in communication, 
+                                                creativity and talent management. Although she has impressive experience and background, her biggest satisfaction is to help people
+                                                excel their self-consciousness and develop their skills. Luckily, her desire to do something for children is supported by her husband
+                                                Tomasz who is ready to contribute to our foundation with his passion for sport and IT business. He already made our logo – isn’t it beautiful?
+                                            </p>
+                                            <p>katarzyna@forchildrensdevelopment.org</p>
+                                            <p>
+                                                And last, but not least – let us introduce you our “mosquito number one”. JAKUB is a member of our team that probably would prefer to 
+                                                remain invisible and unmentioned on our website. However, without him you would never read about us! He is the one that merges together 
+                                                all the girls’ ideas and projects to transpose it to the digital world. Apart from technical support, he plays the role of the organizational
+                                                metronome that beats the rhythm to make the next step in our common development. Also, he is a proof that after graduating geophysics (seismic), 
+                                                working in IT projects you can still use your talents to bring a change to children’s lives.
+                                            </p>
+                                            <p>jakub@forchildrensdevelopment.org</p>
+                                        </div>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('values-section')">>> Values</button></li>
+                                    <div id="values-section" style="display: none;">
+                                        <p>Sometimes we waste your energy or love on somebody who doesn't value it. Sometimes we can close ourselves in a dark room feeling 
+                                            lonely or unwanted while there are so many children that need us - me and you.
+                                        </p>
+                                        <p><b><i>Why children?</i></b></p>
+                                        <p>First of all, we believe we are still world children, sometimes lost on the way, sometimes hurt. We are hiding in our adolescence 
+                                            forgetting who we are, what were our dreams, needs and desires when we were a child. 
+                                        </p>
+                                        <p>
+                                            Second of all, children are the hope of our world. At the same time, they are the most vulnerable creatures that are shaped 
+                                            in a great extend by us adults. While some children in XXI century still don’t have access to drinking water, suffer 
+                                            from hunger while others have too many smartphones and rooms full of clothes they have never worn, there is one 
+                                            prevailing conclusion - all that children need our care and directions that can make them develop into good, wise and valuable humans.
+                                        </p>
+                                        <p>
+                                            While our various projects addresses the needs of children from various and diverse contexts,
+                                            these are our core and universal values that derive from our understanding of childrens’ development:
+                                            <ul>
+                                                <li>LOVE</li>
+                                                <li>SCIENCE</li>
+                                                <li>OPENNESS</li> 
+                                                <li>SUSTAINABLE</li>
+                                                <li>SELF</li>
+                                                <li>DIGNITY</li>
+                                                <li>EMPATHY</li>
+                                                <li>GRATITUDE</li>
+                                                <li>SOLIDARITY</li>
+                                                <li>SHARINGul</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('mission-section')">>> Mission</button></li>
+                                    <div id="mission-section" style="display: none;">
+                                        <p><b><i>How much human in the human being?</i></b></p>
+                                        <p>
+                                            We believe that children should be raised for a self-reliant citizens of the world and equipped with 
+                                            concrete tools that will enable them to create not only scientific solutions for global challenges, 
+                                            but most of all not let them forget what it means to be a human being at first side. To do so, we want 
+                                            to make sure that ethical and moral development in the current societies won’t be neglected. Also, we want 
+                                            children to know how to build social interactions and take responsibility for themselves and others as well. 
+                                            How to remain a human being in the era of AI, automation, cyber crimes and social media challenges. 
+                                            We don’t more children to suffer from depression, low self-esteem and lack of relations with authorities. 
+                                        </p>
+                                        <p><b><i>Shrinking world means more interconnectedness</i></b></p>
+                                        <p>
+                                            Our vision is to work on a holistic approach of human development. We believe that if we provide children 
+                                            with education that would embrace: mind, spirit, psychology and physicality, the youth being equipped with 
+                                            the tools to build healthy and human society will better tackle challenges, that we know already today that 
+                                            are waiting for them today. 
+                                        </p>
+                                        <p>
+                                            Some of us still want to believe that what is behind the borders of our countries, behind our sight is 
+                                            behind our mind and reality. However, such a mindset might turn out to be a trap for the next generations. 
+                                            World is becoming the Pangea again, and in the old continent it is unprecedented that it happens in a peaceful way. 
+                                            However, nothing is given us for granted and our children need a lot of qualities not only to live in that 
+                                            context but also build it in a constructive, wise and peaceful manner. 
+                                            Most urgently, children need to know how to find peace, love and fulfillment inside themselves.
+                                        </p>
+                                        <p><b><i>Global citizen of the XXI century</i></b></p>
+                                        <p>
+                                            What does it mean? To be a globetrotter, backpacker or spent money or holiday in the most exotic or touristic
+                                            corners of the world at least once per year? We want our kids to keep this question in their mind:
+                                        </p>
+                                        <p>
+                                            “What is my achievement that I was born in a safe, peaceful, welfare place of the world where I have so much 
+                                            given for free - and if the answer is none - what is my role to give back voluntarily a small part from my heart 
+                                            to those who were not as lucky as me?”.
+                                        </p>
+                                        <p>
+                                            We want children to have a clear mind on: What Are We? Where Are We Going?
+                                        </p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('social-media-section')">>> Social Media</button></li>
+                                    <div id="social-media-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('our-partners-section')">>> Our Partners</button></li>
+                                    <div id="our-partners-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                            </ul>
+                        </div>
+                        <div id="about-you-list-section" class="description" style="display: none;">
+                            <p>We would like to connect with as many people as possible to do something meaningful:</p>
+                            <ul>
+                                <li>- by creating various platforms of cooperation, and</li>
+                                <li>- by sharing tools, skills so that children can overcome challenging circumstances they  live in and build a better future together with us.</li>
+                            </ul>
+                            <p>You can be a minor or an adult, an organization or a company, a student or a professional, an unemployed or a person whose money are no longer the source of pursuit…</p>
+                            <p>If you all want to start your journey to discover the meaning of life and love…</p>
+                            <p>… FEEL WELCOME TO JOIN US! We need someone just like you!</p>
+                            <ul>
+                                <li><button class="btn btn-link" onclick="displayElement('ladder-section')">>> Ladder of involvement</button></li>
+                                    <div id="ladder-section" style="display: none;">
+                                        <p>
+                                            Each of us is different – we have various talents, capacities and life obligations. 
+                                            Accordingly to your possibilities you can involve and cooperate with us.
+                                        </p>
+                                        <p>
+                                            We have prepared for you our LADDER OF INVOLVEMENT – you can choose how much of your time, attention, 
+                                            involvement, skills or material support you can or want to share with us today.
+                                        </p>
+                                        <p>
+                                            Also, if you have some ideas on what you would like to do for children in your neighbourhood, 
+                                            country or place you know that children need support or simply have some constructive feedback for us – 
+                                            please do not hesitate to contact us.
+                                        </p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('individual-section')">>> Individual</button></li>
+                                    <div id="individual-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('group-section')">>> Group of people</button></li>
+                                    <div id="group-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('private-section')">>> Private sector company</button></li>
+                                    <div id="private-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('public-section')">>> Public institutions</button></li>
+                                    <div id="public-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('ngo-section')">>> NGO</button></li>
+                                    <div id="ngo-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('sponsor-section')">>> Sponsor</button></li>
+                                    <div id="sponsor-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('mentor-section')">>> Mentor</button></li>
+                                    <div id="mentor-section" style="display: none;">
+                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                    </div>
+                            </ul>
+                        </div>
+                        <div id="projects-list-section" class="description" style="display: none;">
+                            <ul>
+                                <li><button class="btn btn-link" onclick="displayElement('development-section')">>> Development</button></li>
+                                    <div id="development-section" style="display: none;">
+                                        <p></p>
+                                        <img class="project-link-img" src="img/kwiate-small.png" alt="Librafrica logo">
+                                        <p></p>
+                                        <p>
+                                            Doing several development projects in Africa, the founder of the Foundation found that the lack of qualitative 
+                                            education in the rural areas is causing stagnation in growing populations and lack of progress. 
+                                            Children in many African countries believe that education is the key and the future and we do we agree with them. 
+                                            However, we know what kind of education can bring a real change.
+                                        </p>
+                                        <p>
+                                            LibrAfrica project aims to equalize the development opportunities of children from rural areas in Africa and to 
+                                            improve the quality of their education. Thanks to the access to development tools such as: books, maps, dictionaries, 
+                                            logic, abstract and strategic games, instruments, computers - LibrAfrica strives to increase the level of knowledge, 
+                                            but most importantly reading skills, critical, abstract and creative thinking that in a long perspective will improve 
+                                            the quality of life among the poorest.
+                                        </p>
+                                        <p>
+                                            Instead of fish, the LibrAfrica project wants to provide children in Africa with a fishing rod to catch them i.e. 
+                                            tools for independent development of talents and predispositions regardless of the circumstances in which they were born.
+                                        </p>
+                                        <a class="external-link" href="https://www.youtube.com/watch?v=-f-OVBPIk6c" target="_blank"><b>YouTube: Librafrica</b></a>
+                                        <p>
+                                            In 2018 we built and equipped the first LibrAfrica development center for children in Uganda. 
+                                            In 2019 Justyna Jarząbska wrote a project that was financed by the <a class="external-link" href="https://www.polskapomoc.gov.pl/Polish,Aid,160.html" target="_blank"><b>Polish Aid Fund</b></a> 
+                                            (<a class="external-link" href="https://www.msz.gov.pl/en/" target="_blank"><b>Polish Ministry of Foreign Affairs</b></a>) and two volunteers were sent there to buy 
+                                            more equipment and to open officially the library. Now, we are preparing the next LibrAfrica center for children 
+                                            in Tanzania and on our map we have already next places to enhance children’s development. 
+                                            Please visit <a class="external-link" href="http://librafrica.org" target="_blank"><b>Librafrica website</b></a> to learn more.
+                                        </p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('migration-section')">>> Migration</button></li>
+                                    <div id="migration-section" style="display: none;">
+                                        <p>European Guardianship Network</p>
+                                        <p>The vision of the European Guardianship Network is to create a network that will be an inclusive and supportive 
+                                            environment which will enable members to contribute to the development of safe, effective and consistent ways 
+                                            of delivering high quality, child rights-based, and accessible guardianship services. The Network will be a welcoming
+                                            and enabling forum for the development of best practice that will put the rights and best interests of separated 
+                                            and unaccompanied children at the heart of its work thus leading to better outcomes for children and the 
+                                            guardianship services who work with them.
+                                        </p>
+                                        <p>The Touchstone-project will:</p>
+                                        <ul>
+                                            <li>- develop a network of guardianship authorities and agencies, (local) authorities and international and non-governmental organisations;</li>
+                                            <li>- exchange good practices, expertise and other relevant information;</li>
+                                            <li>- share ideas and cooperation on common challenges and cross border work;</li>
+                                            <li>- develop a vision on how to guide unaccompanied children and organise shared sessions to build capacity.</li>
+                                        </ul>
+                                        <p>
+                                            Our Foundation aims at creating a common mission in Poland in cooperation with other stakeholders. 
+                                            Through the EGN the IICD will serve as a platform for discussion on the situation in the country, 
+                                            ensuring a child-centered and child-rights based holistic approach. Special consideration will therefore be 
+                                            given to participation of unaccompanied children and former unaccompanied children.
+                                        </p>
+                                    </div>
+                                <li><button class="btn btn-link" onclick="displayElement('sustainable-edu-section')">>> Sustainable education</button></li>
+                                    <div id="sustainable-edu-section" style="display: none;">
+                                        <p>
+                                            Holistic development of a human being is needed in order to create a mature individual. Our team wants to provide 
+                                            for children the tools that will help them to establish consciously their identity providing the space for mental, 
+                                            physical, psychological and spiritual growth.
+                                        </p>
+                                        <p>
+                                            Through our initiatives we aim to motivate children to multiply their talents, share their happiness with others.
+                                        </p>
+                                        <p>
+                                            Our Foundation designs and delivers projects and trainings for children in kindergartens, schools, universities, 
+                                            teachers, parents and all interested in children’s development partners on:
+                                        </p>
+                                        <ul>
+                                            <li>- teaching science through experiences</li>
+                                            <li>- non-formal education methods and effective study techniques</li>
+                                            <li>- life skills</li>
+                                            <li>- global education</li>
+                                            <li>- human rights</li>
+                                            <li>- environment and conscious consumption</li>
+                                            <li>- civil society</li>
+                                            <li>- communication and auto-presentation skills</li>
+                                            <li>- entrepreneurship and job market</li>
+                                            <li>- programming and IT skills</li>
+                                            <li>- sport and health</li>
+                                            <li>- searching for information on the Internet and the information bubbles</li>
+                                            <li>- cyber crime and security on the Internet</li>
+                                        </ul>
+                                    </div>
+                                <li><button class="btn btn-link">>> Consulting</button></li>
+                            </ul>
+                        </div>
+                        <div id="methodology-list-section" class="description" style="display: none;">
+                            <ul>
+                                <li><button class="btn btn-link">>> Research</button></li>
+                                <li><button class="btn btn-link">>> Children's voice</button></li>
+                                <li><button class="btn btn-link">>> Our tools</button></li>
+                                <li><button class="btn btn-link">>> Inspiration</button></li>
+                                <li><button class="btn btn-link">>> Reflections</button></li>
+                            </ul>
+                        </div>
+                        <div id="contact-section" class="description" style="display: none;">
+                            <div>
+                                <p>Phone: +48 881 657 690</p>
+                                <p>Email: info@forchildrensdevelopment.org</p>
+                                <p>If you would like to support us, you can make a donation to the following bank account:</p>
+                                <p>Account number: 41 1240 1037 1111 0010 9280 6310</p>
+                                <p>IBAN: PL 41 1240 1037 1111 0010 9280 6310</p>
+                                <p>SWIFT/BIC: PKOPPLPW</p>
                             </div>
                         </div>
                     </div>
