@@ -15,7 +15,9 @@ function displayElementHideList(el, list) {
     });
     if (x.style.display === "none") {
       x.style.display = "block";
-    } 
+    } else {
+      x.style.display = "none";
+    }
 }
 
 function displayElement(el) {
@@ -26,3 +28,5 @@ function displayElement(el) {
       x.style.display = "none";
     }
 }
+
+document.getElementById("video-background").playbackRate = 0.5;
