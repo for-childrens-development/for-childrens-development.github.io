@@ -38,10 +38,10 @@
         <div class="row">
             <div class="main-section">
                 
-                <!-- <div class="lang-btn">                        
+                <div class="lang-btn">                        
                     <button lang="en" style="border:none;" type="button" class="btn btn-outline-light btn-language" onclick="document.body.className='pl'">PL</button>
                     <button lang="pl" style="border:none;" type="button" class="btn btn-outline-light btn-language" onclick="document.body.className='en'">EN</button>
-                </div> -->
+                </div>
 
                 <div id="moveable-content">
                     <div>
@@ -96,104 +96,215 @@
 
                         <div id="about-us-list-section" class="description" style="display: none;">
                             <ul>
-                                <li><button class="btn btn-link" onclick="displayElement('institute-section')">>> Institute</button></li>
-                                    <div id="institute-section" style="display: none;">
-                                        <p>International Institute for Children's Development</p>
-                                        <p>ul. Krótka 2 Stare Kupiski, 18-400 Łomża, Poland</p>
-                                        <p>KRS: 0000799371</p>
-                                        <p>NIP: 7182152540</p>
-                                        <p>REGON: 384132586</p>
-                                    </div>
-                                <li><button class="btn btn-link" onclick="displayElement('team-section')">>> Team</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('institute-section')">
+                                        <span lang="en">>> Institute</span>
+                                        <span lang="pl">>> Instytut</span>
+                                    </button></li>
+                                        <div id="institute-section" style="display: none;">
+                                            <p lang="en">International Institute for Children's Development</p>
+                                            <p lang="pl">Międzynarodowy Instytut Rozwoju Dzieci</p>
+                                            <p>ul. Krótka 2 Stare Kupiski, 18-400 Łomża, Poland</p>
+                                            <p>KRS: 0000799371</p>
+                                            <p>NIP: 7182152540</p>
+                                            <p>REGON: 384132586</p>
+                                        </div>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('team-section')">
+                                        <span lang="en">>> Team</span>
+                                        <span lang="pl">>> Zespół</span>
+                                    </button>
+                                </li>
                                     <div id="team-section" style="display: none;">
-                                        <p><b><i>“If you think you are too small to make a difference, try to sleep in the presence of a mosquito.”</i></b></p>
-                                        <p>We didn’t want to be another organization that would have to focus on collecting money for survival at the expense of children.</p>
-                                        <p>At the same time we know that “the harvest is plentiful, but the laborers are few” and the world needs more positive change makers!</p>
-                                        <p class="btn btn-link" onclick="displayElement('team-section-more')">read more</p>
+                                        <p lang="en"><b><i>“If you think you are too small to make a difference, try to sleep in the presence of a mosquito.”</i></b></p>
+                                        <p lang="pl"><b><i>“Jeśli myślisz, że jesteś zbyt mały żeby zrobić różnicę, spróbuj zasnąć w obecności komara.”</i></b></p>
+
+                                        <p lang="en">We didn’t want to be another organization that would have to focus on collecting money for survival at the expense of children.</p>
+                                        <p lang="pl">Nie chcieliśmy być kolejną organizacją, która skupiałaby się na zbieraniu pieniędzy na przetrwanie kosztem dzieci.</p>
+
+                                        <p lang="en">At the same time we know that “the harvest is plentiful, but the laborers are few” and the world needs more positive change makers!</p>
+                                        <p lang="pl">Jednocześnie wiemy, że “żniwo wprawdzie wielkie, ale robotników mało” i świat potrzebuje więcej ludzi, którzy będą zmieniać go na lepsze.</p>
+
+                                        <p class="btn btn-link" onclick="displayElement('team-section-more')">
+                                            <span lang="en">read more</span>
+                                            <span lang="pl">czytaj więcej</span>
+                                        </p>
+
                                         <div id="team-section-more" style="display: none;">
-                                            <p>We all love children and care about their development. We know that childhood is not about good or bad grades. 
+                                            <p lang="en">We all love children and care about their development. We know that childhood is not about good or bad grades. 
                                                 Good childhood is about love, understanding, passion, security, demanding and inspiring to growth. 
                                                 In every continent, in every country the needs of children are uncovered, sometimes even unnoticed. 
                                                 Where there is the lack of sense, egocentrism, dazzling consumption or lonely emptiness, 
                                                 we believe that the world needs more love that blossoms when it’s shared. Paradoxically, 
                                                 we all need to be the ones to receive, and to give - in order to develop our humanity.
                                             </p>
-                                            <p><i><strong>Why us?</strong></i></p>
-                                            <p>We feel that we are so small like a mosquito, but our desire to share what we have empowers us
+                                            <p lang="pl">Wszyscy kochamy dzieci i troszczymy się o ich rozwój. Wiemy, że dzieciństwo nie polega na zbieraniu 
+                                                dobrych lub złych stopni. Dobre dzieciństwo polega na miłości, zrozumieniu, pasji, bezpieczeństwu, 
+                                                na wymaganiach i inspirującjach do rozwoju. W wielu miejscach na świecie potrzeby dzieci pozostają niezauważone. 
+                                                Gdzie brakuje poczucia sensu, panuje egocentryzm, otępiający konsumpcjonizm lub pustka samotności, wierzymy, 
+                                                że świat potrzebuje więcej miłości, która rozkwita kiedy się nią dzielimy. Paradoksalnie, wszyscy musimy być tymi,
+                                                 którzy nie tylko otrzymują, ale również dają - dzięki temu rozwijamy nasze człowieczeństwo.
+                                            </p>
+                                            <p lang="en"><i><strong>Why us?</strong></i></p>
+                                            <p lang="pl"><i><strong>Dlaczego my?</strong></i></p>
+                                            <p lang="en">We feel that we are so small like a mosquito, but our desire to share what we have empowers us
                                                 to forget about our limits and think more about a small difference we can make, together with you.
                                             </p>
-                                            <p>
+                                            <p lang="pl">Czujemy, że jesteśmy tak mali jak komary, ale nasze pragnienie dzielenia się tym co mamy pozwala
+                                                 nam zapomnieć o naszych ograniczeniach i każe nam myśleć więcej o tych niewielkich różnicach, które możemy
+                                                  zrobić, razem z Tobą. W ten sposób widzimy siebie jako organizacja pozarządowa - niczym “garstka komarów”, 
+                                                  więc wyobraź sobie mieć nas wszystkich w swoim pokoju ;)
+                                            </p>
+                                            <p lang="en">
                                                 On our board we have a dreamer that wanted to be a Robin Hood while being a child while other children wanted to be famous and rich. 
                                                 JUSTYNA managed to work with a few most vulnerable small humans who suffer from hunger, disabilities and the world’s indifference 
                                                 in different parts of the world. So today she wants to connect people from different homes and continents, inspire them to contribute 
                                                 to small changes in concrete lives and explain why sharing is what the world needs. What children need. She is a founder of the organization and a head full of ideas.            
                                             </p>
+                                            <p lang="pl">
+                                                W zespole mamy marzycielkę, która jako dziecko chciała zostać Robin Hoodem, podczas gdy inne dzieci chciały
+                                                 być sławne i bogate. JUSTYNA pracowała z najbardziej wrażliwymi, cierpiącymi głód, niedostatek i upośledzenia, 
+                                                 doświadczającymi obojętności świata istotami ludzkimi w różnych częściach świata. Dzisiaj chce łączyć ludzi z
+                                                  różnych domów na różnych kontynentach, inspirować ich do tego, aby też wnosili swój wkład w zmiany w życiu
+                                                   innych ludzi. Stara się wyjaśniać, że dzielenie się jest tym czego świat dzisiaj potrzebuje, tym czego 
+                                                   potrzebują dzieci. Jest założycielką naszej organizacji i głową pełną pomysłów.
+                                            </p>
                                             <p>justyna@forchildrensdevelopment.org</p>
                                             </br>
-                                            <p>
+                                            <p lang="en">
+                                                We have a mother of three small kids that apart from taking care of her own family is creating projects for children and youth in her neighbourhood.
+                                                When she stops cooking, washing, cleaning and playing with children she tries to find some to make them love science more (and school). 
+                                                How? By teaching and demonstrating various experiments than can bring a lot of profit in daily life (making natural cosmetics). 
+                                                Oh yes, and in the meantime ASIA is about to finish her PhD in chemistry. Let’s keep our fingers crossed for her, she needs it!
+                                            </p>
+                                            <p lang="pl">
+                                                W zespole mamy również matkę trójki dzieci, która poza obowiązkami rodzinnymi zajmuje się tworzeniem 
+                                                projektów dla dzieci i młodzieży w swojej okolicy. Kiedy przestaje na chwilę gotować, sprzątać i bawić się z dziećmi, 
+                                                stara się znaleźć chwilę, aby zainteresować je światem nauki. Jak? Przeprowadzając różne eksperymenty, które mogą 
+                                                przynieść wiele korzyści materialnych do codziennego życia (wytwarzanie naturalnych kosmetyków). A właśnie, 
+                                                w międzyczasie ASIA kończy jeszcze doktorat z chemii. Trzymajmy za nią kciuki!
+                                            </p>
+                                            <p>joanna@forchildrensdevelopment.org </p>
+                                            </br>
+                                            <p lang="en">
                                                 We have a wonderful couple in our team as well. They both made outstanding careers in the international corporate world and 
                                                 now they want to share their skills with children. KASIA spent her last 10 years in Human Resources as a trainer in communication, 
                                                 creativity and talent management. Although she has impressive experience and background, her biggest satisfaction is to help people
                                                 excel their self-consciousness and develop their skills. Luckily, her desire to do something for children is supported by her husband
                                                 Tomasz who is ready to contribute to our foundation with his passion for sport and IT business. He already made our logo – isn’t it beautiful?
                                             </p>
+                                            <p lang="pl">
+                                                Mamy też wspaniałą parę w naszym zespole. Oboje zrobili błyskotliwe kariery w międzynarodowych korporacjach a 
+                                                teraz chcą podzielić się swoimi umiejętnościami z dziećmi. KASIA ostatnie 10 lat spędziła w HR jako trener od 
+                                                komunikacji, kreatywności i zarządzania talentami. Mimo posiadania imponującego doświadczenia i możliwości, 
+                                                największą satysfakcję daje jej wydobywanie z ludzi tego co w nich najlepsze, budowanie ich samoświadomości 
+                                                oraz pomoc w rozwijaniu ich umiejętności. Na szczęście, w swoim pragnieniu robienia czegoś dobrego dla dzieci 
+                                                ma wsparcie w mężu Tomaszu, który ze swoją pasją do sportu i IT  jest gotowy wnieść wkład do naszej fundacji. 
+                                                Jest między innymi twórca naszego logo.
+                                            </p>
                                             <p>katarzyna@forchildrensdevelopment.org</p>
                                             </br>
-                                            <p>
-                                                We have a mother of three small kids that apart from taking care of her own family is creating projects for children and youth in her neighbourhood.
-                                                When she stops cooking, washing, cleaning and playing with children she tries to find some to make them love science more (and school). 
-                                                How? By teaching and demonstrating various experiments than can bring a lot of profit in daily life (making natural cosmetics). 
-                                                Oh yes, and in the meantime ASIA is about to finish her PhD in chemistry. Let’s keep our fingers crossed for her, she needs it!
-                                            </p>
-                                            <p>joanna@forchildrensdevelopment.org </p>
-                                            </br>
-                                            <p>
+                                            <p lang="en">
                                                 And last, but not least – let us introduce you our “mosquito number one”. JAKUB is a member of our team that probably would prefer to 
                                                 remain invisible and unmentioned on our website. However, without him you would never read about us! He is the one that merges together 
                                                 all the girls’ ideas and projects to transpose it to the digital world. Apart from technical support, he plays the role of the organizational
                                                 metronome that beats the rhythm to make the next step in our common development. Also, he is a proof that after graduating geophysics (seismic), 
                                                 working in IT projects you can still use your talents to bring a change to children’s lives.
                                             </p>
+                                            <p lang="pl">
+                                                Kolejnym “komarem” w naszej układance jest JAKUB, który prawdopodobnie wolałby pozostać anonimowy. Jednak bez
+                                                 niego nigdy nie czytalibyście o nas tutaj. Jego praca polega między innymi na przelewaniu pomysłów dziewczyn 
+                                                 na “cyfrowy papier”. JAKUB jest dowodem na to, że nawet zaczynając jako geofizyk można ostatecznie realizować swoje 
+                                                 dodatkowe pasje pomagając przy tym jako wolontariusz.
+                                            </p>
                                             <p>jakub@forchildrensdevelopment.org</p>
                                             </br>
                                         </div>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('values-section')">>> Values</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('values-section')">
+                                        <span lang="en">>> Values</span>
+                                        <span lang="pl">>> Wartości</span>
+                                    </button>
+                                </li>
                                     <div id="values-section" style="display: none;">
-                                        <p>Sometimes we waste your energy or love on somebody who doesn't value it. Sometimes we can close ourselves in a dark room feeling 
-                                            lonely or unwanted while there are so many children that need us - me and you.
+                                        <p lang="en">Sometimes we waste your energy or love on somebody who doesn't value it. Sometimes we can close 
+                                            ourselves in a dark room feeling lonely or unwanted while there are so many children that need us - me and you.
                                         </p>
-                                        <p><b><i>Why children?</i></b></p>
-                                        <p>First of all, we believe we are still world children, sometimes lost on the way, sometimes hurt. We are hiding in our adolescence 
+                                        <p lang="pl">Czasami marnujemy naszą energię lub miłość na kogoś kto tego nie docenia. Czasami możemy się 
+                                            zamykać w ciemnym pokoju czując się osamotnionym lub niechcianym, podczas gdy na świecie jest tyle dzieci, 
+                                            które nas potrzebują - Ciebie i mnie.
+                                        </p>
+
+                                        <p lang="en"><b><i>Why children?</i></b></p>
+                                        <p lang="pl"><b><i>Dlaczego dzieci?</i></b></p>
+
+                                        <p lang="en">First of all, we believe we are still world children, sometimes lost on the way, sometimes hurt. We are hiding in our adolescence 
                                             forgetting who we are, what were our dreams, needs and desires when we were a child. 
                                         </p>
-                                        <p>
+                                        <p lang="pl">Po pierwsze, wierzymy, że ciągle jesteśmy światem dzieci, czasem zagubieni na naszej drodze, 
+                                            czasem skrzywdzeni. Ukrywamy się w naszej dorosłości zapominając kim jesteśmy, jakie były nasze marzenia, 
+                                            potrzeby i pragnienia serca kiedy byliśmy dziećmi.
+                                        </p>
+
+                                        <p lang="en">
                                             Second of all, children are the hope of our world. At the same time, they are the most vulnerable creatures that are shaped 
                                             in a great extend by us adults. While some children in XXI century still don’t have access to drinking water, suffer 
                                             from hunger while others have too many smartphones and rooms full of clothes they have never worn, there is one 
                                             prevailing conclusion - all that children need our care and directions that can make them develop into good, wise and valuable humans.
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Po drugie, dzieci są nadzieją naszego świata. Jednocześnie, są one najbardziej wrażliwymi stworzeniami 
+                                            ukształtowanymi w największym stopniu przez nas, dorosłych. Podczas, gdy w XXI w. niektóre dzieci nadal 
+                                            nie mają dostępu do wody pitnej i cierpią głód, inne mają tak dużo smartfonów i pokoi pełnych ubrań, 
+                                            których nigdy nie założą, nasuwa się jeden wniosek - wszystkie te dzieci potrzebują żeby ktoś je pokierował 
+                                            tak, aby rozwinęły się w dobrych, mądrych i wartościowych ludzi.
+                                        </p>
+
+                                        <p lang="en">
                                             While our various projects addresses the needs of children from various and diverse contexts,
                                             these are our core and universal values that derive from our understanding of childrens’ development:
                                             <ul>
-                                                <li>LOVE</li>
-                                                <li>SCIENCE</li>
-                                                <li>OPENNESS</li> 
-                                                <li>SUSTAINABLE</li>
-                                                <li>SELF</li>
-                                                <li>DIGNITY</li>
-                                                <li>EMPATHY</li>
-                                                <li>GRATITUDE</li>
-                                                <li>SOLIDARITY</li>
-                                                <li>SHARING</li>
+                                                <li lang="en">LOVE</li>
+                                                <li lang="en">SCIENCE</li>
+                                                <li lang="en">OPENNESS</li> 
+                                                <li lang="en">SUSTAINABLE EDUCATION</li>
+                                                <li lang="en">SELF-RELIANCE</li>
+                                                <li lang="en">DIGNITY</li>
+                                                <li lang="en">EMPATHY</li>
+                                                <li lang="en">GRATITUDE</li>
+                                                <li lang="en">SOLIDARITY</li>
+                                                <li lang="en">SHARING</li>
+                                            </ul>
+                                        </p>
+                                        <p lang="pl">
+                                            Nasze projekty zaadresowane sa ku potrzebom dzieci z różnych środowisk, dlatego następujące wartości są dla 
+                                            nas trzonem, który wyrósł ze zrozumienia na czym polegać powinien rozwój dzieci:
+                                            <ul>
+                                                <li lang="pl">MIŁOŚĆ</li>
+                                                <li lang="pl">NAUKA</li>
+                                                <li lang="pl">OTWARTOŚĆ</li> 
+                                                <li lang="pl">ZRÓWNOWAŻONA EDUKACJA</li>
+                                                <li lang="pl">SAMODZIELNOŚĆ</li>
+                                                <li lang="pl">GODNOŚĆ</li>
+                                                <li lang="pl">EMPATIA</li>
+                                                <li lang="pl">WDZIĘCZNOŚĆ</li>
+                                                <li lang="pl">SOLIDARNOŚĆ</li>
+                                                <li lang="pl">DZIELENIE</li>
                                             </ul>
                                         </p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('mission-section')">>> Mission</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('mission-section')">
+                                        <span lang="en">>> Mission</span>
+                                        <span lang="pl">>> Misja</span>
+                                    </button>
+                                </li>
                                     <div id="mission-section" style="display: none;">
-                                        <p><b><i>How much human in the human being?</i></b></p>
-                                        <p>
+                                        <p lang="en"><b><i>How much human in the human being?</i></b></p>
+                                        <p lang="pl"><b><i>Jak wiele człowieczeństwa w człowieku?</i></b></p>
+
+                                        <p lang="en">
                                             We believe that children should be raised for a self-reliant citizens of the world and equipped with 
                                             concrete tools that will enable them to create not only scientific solutions for global challenges, 
                                             but most of all not let them forget what it means to be a human being at first side. To do so, we want 
@@ -202,14 +313,32 @@
                                             How to remain a human being in the era of AI, automation, cyber crimes and social media challenges. 
                                             We don’t more children to suffer from depression, low self-esteem and lack of relations with authorities. 
                                         </p>
-                                        <p><b><i>Shrinking world means more interconnectedness</i></b></p>
-                                        <p>
+                                        <p lang="pl">
+                                            Wierzymy, że dzieci powinny być wychowywane na samowystarczalnych obywateli świata i powinny być wyposażone 
+                                            w konkretne narzędzia, które pozwolą im na tworzenie nie tylko rozwiązań naukowych dla problemów globalnych, 
+                                            lecz przede wszystkim aby nie zapominały co oznacza bycie człowiekiem. Aby to osiągnąć, chcemy się upewnić, 
+                                            że rozwój etyczny i moralny w obecnym społeczeństwie nie pozostaje zaniedbany. Również, chcemy aby dzieci 
+                                            wiedziały jak budować relacje społeczne i brać odpowiedzialność za siebie samych a także innych. Jak pozostać 
+                                            człowiekiem w erze sztucznej inteligencji, automatyzacji, cyber przestępstw i mediów społecznościowych. 
+                                            Nie chcemy, aby dzieci cierpiały na depresję, niską samoocenę i brak relacji z autorytetami.
+                                        </p>
+
+                                        <p lang="en"><b><i>Shrinking world means more interconnectedness</i></b></p>
+                                        <p lang="pl"><b><i>Kurczący się świat oznacza więcej wzajemnych połączeń</i></b></p>
+                                        <p lang="en">
                                             Our vision is to work on a holistic approach of human development. We believe that if we provide children 
                                             with education that would embrace: mind, spirit, psychology and physicality, the youth being equipped with 
                                             the tools to build healthy and human society will better tackle challenges, that we know already today that 
                                             are waiting for them today. 
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Naszą wizją jest praca nad całościowym podejściem do rozwoju ludzkiego. Wierzymy, że jeśli zapewnimy 
+                                            dzieciom edukację, w różnych aspektach: umysłowym, duchowym, psychologicznym, fizycznym, wtedy młodzi 
+                                            ludzie zaopatrzeni w narzędzia niezbędne do tworzenia zdrowego i ludzkiego społeczeństwa będą mogli łatwiej 
+                                            sprostać wyzwaniom, o których już dziś wiemy, że będą na nie czekać.
+                                        </p>
+
+                                        <p lang="en">
                                             Some of us still want to believe that what is behind the borders of our countries, behind our sight is 
                                             behind our mind and reality. However, such a mindset might turn out to be a trap for the next generations. 
                                             World is becoming the Pangea again, and in the old continent it is unprecedented that it happens in a peaceful way. 
@@ -217,193 +346,498 @@
                                             context but also build it in a constructive, wise and peaceful manner. 
                                             Most urgently, children need to know how to find peace, love and fulfillment inside themselves.
                                         </p>
-                                        <p><b><i>Global citizen of the XXI century</i></b></p>
-                                        <p>
+                                        <p lang="pl">
+                                            Niektórzy z nas ciągle chcą wierzyć, że coś co jest poza granicami naszego kraju, poza zasięgiem naszego wzroku, 
+                                            jest poza naszym umysłem i rzeczywistością. Jednakże, taki punkt widzenia może okazać się pułapką dla następnej 
+                                            generacji. Świat ponownie staje się Pangeą, i bezprecedensowe jest to, że na starym kontynencie dzieje się to w 
+                                            sposób pokojowy. Nie mamy jednak gwarancji, że tak będzie zawsze i nasze dzieci potrzebują wiele cech nie tylko, 
+                                            żeby żyć w takim układzie, ale żeby go konstruktywnie, mądrze i pokojowo budować. Najbardziej pilne jest więc to, 
+                                            aby dzieci wiedziały jak odnaleźć pokój, miłość i spełnienie w sobie.
+                                        </p>
+
+                                        <p lang="en"><b><i>Global citizen of the XXI century</i></b></p>
+                                        <p lang="pl"><b><i>Obywatel świata XXI wieku</i></b></p>
+
+                                        <p lang="en">
                                             What does it mean? To be a globetrotter, backpacker or spent money or holiday in the most exotic or touristic
                                             corners of the world at least once per year? We want our kids to keep this question in their mind:
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Co to oznacza? Bycie globtrotterem, autostopowiczem czy tym co wydaje pieniądze na wakacje do najbardziej 
+                                            egzotycznych krajów świata przynajmniej raz w roku? Chcielibyśmy, aby nasze dzieci miały zawsze takie 
+                                            pytanie w głowie:
+                                        </p>
+
+                                        <p lang="en">
                                             “What is my achievement that I was born in a safe, peaceful, welfare place of the world where I have so much 
                                             given for free - and if the answer is none - what is my role to give back voluntarily a small part from my heart 
                                             to those who were not as lucky as me?”.
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            “Jaka jest moja zasługa w tym, że urodziłem się w bezpiecznym, bogatym miejscu na świecie gdzie tak dużo 
+                                            otrzymuję za darmo - i jeśli odpowiedź brzmi ‘nie’ - jaka jest moja rola w tym żeby oddać dobrowolnie małą 
+                                            cząstkę mojego serca tym, którzy nie mięli takiego szczęścia jak ja?”
+                                        </p>
+
+                                        <p lang="en">
                                             We want children to have a clear mind on: What Are We? Where Are We Going?
                                         </p>
+                                        <p lang="pl">
+                                            Chcemy, aby dzieci miały jasno sprecyzowane: Kim jesteśmy? Dokąd zmierzamy?
+                                        </p>
+
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('social-media-section')">>> Social Media</button></li>
-                                    <div id="social-media-section" style="display: none;">
-                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
-                                    </div>
-                                <li><button class="btn btn-link" onclick="displayElement('our-partners-section')">>> Our Partners</button></li>
-                                    <div id="our-partners-section" style="display: none;">
-                                        <p>&#60;&#60; coming soon &#62;&#62;</p>
-                                    </div>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('social-media-section')">
+                                       <span lang="en">>> Social Media</span>
+                                       <span lang="pl">>> Media Społecznościowe</span>
+                                    </button>
+                                </li>
+                                <div id="social-media-section" style="display: none;">
+                                    <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                </div>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('our-partners-section')">
+                                        <span lang="en">>> Our Partners</span>
+                                        <span lang="pl">>> Nasi Partnerzy</span>
+                                    </button>
+                                </li>
+                                <div id="our-partners-section" style="display: none;">
+                                    <p>&#60;&#60; coming soon &#62;&#62;</p>
+                                </div>
                             </ul>
                         </div>
                         <div id="about-you-list-section" class="description" style="display: none;">
-                            <p>We would like to connect with as many people as possible to do something meaningful:</p>
+                            <p lang="en">We would like to connect with as many people as possible to do something meaningful:</p>
+                            <p lang="pl">Chcielibyśmy stworzyć jak zgromadzić jak największą liczbę osób po to aby wspólnie zrobić coś wartościowego:</p>
+
                             <ul>
-                                <li>- by creating various platforms of cooperation, and</li>
-                                <li>- by sharing tools, skills so that children can overcome challenging circumstances they  live in and build a better future together with us.</li>
+                                <li lang="en">- by creating various platforms of cooperation, and</li>
+                                <li lang="pl">- Tworząc różnego rodzaju platformy współpracy, oraz</li>
+
+                                <li lang="en">- by sharing tools, skills so that children can overcome challenging circumstances they  live in and build a better future together with us.</li>
+                                <li lang="pl">- Dzieląc się umiejętnościami, lub pokazując narzędzi dzięki którym dzieci będą mogły radzić sobie w trudnych okolicznościach w których przyszło im żyć.</li>
                             </ul>
-                            <p>You can be a minor or an adult, an organization or a company, a student or a professional, an unemployed or a person whose money are no longer the source of pursuit…</p>
-                            <p>If you all want to start your journey to discover the meaning of life and love…</p>
-                            <p>… FEEL WELCOME TO JOIN US! We need someone just like you!</p>
+                            
+                            <p lang="en">You can be a minor or an adult, an organization or a company, a student or a professional, an unemployed or a person whose money are no longer the source of pursuit…</p>
+                            <p lang="pl">Możesz być osobą nieletnią lub dorosłą, organizacją lub firmą, studentem lub specjalistą, nie pracującym czy też osobą, dla której pieniądze nie stanowią już celu...</p>
+
+                            <p lang="en">If you all want to start your journey to discover the meaning of life and love…</p>
+                            <p lang="pl">Jeśli chciałbyś rozpocząć swoją wędrówkę do odkrywania sensu życia i miłości...</p>
+
+                            <p lang="en">… FEEL WELCOME TO JOIN US! We need someone just like you!</p>
+                            <p lang="pl">… CZUJ SIĘ ZAPROSZONY I DOŁĄCZ DO NAS! Potrzebujemy właśnie kogoś takiego jak Ty!</p>
+
                             <ul>
-                                <li><button class="btn btn-link" onclick="displayElement('ladder-section')">>> Ladder of involvement</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('ladder-section')">
+                                        <span lang="en">>> Ladder of involvement</span>
+                                        <span lang="pl">>> Drabina zaangażowania</span>
+                                    </button>
+                                </li>
                                     <div id="ladder-section" style="display: none;">
-                                        <p>
+                                        <p lang="en">
                                             Each of us is different – we have various talents, capacities and life obligations. 
                                             Accordingly to your possibilities you can involve and cooperate with us.
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Każdy z nas jest inny - mamy różne talenty, możliwości i obowiązki życiowe. 
+                                            Możesz się zaangażować w miarę swoich możliwości i nawiązać z nami współpracę.
+                                        </p>
+
+                                        <p lang="en">
                                             We have prepared for you our LADDER OF INVOLVEMENT – you can choose how much of your time, attention, 
                                             involvement, skills or material support you can or want to share with us today.
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Przygotowaliśmy dla Ciebie naszą DRABINĘ ZAANGAŻOWANIA - możesz zdecydować w jakim stopniu chciałbyś się 
+                                            z nami podzielić swoim czasem, uwagą, zaangażowaniem, umiejętnościami czy może wsparciem materialnym.
+                                        </p>
+
+                                        <p lang="en">
                                             Also, if you have some ideas on what you would like to do for children in your neighbourhood, 
                                             country or place you know that children need support or simply have some constructive feedback for us – 
                                             please do not hesitate to contact us.
                                         </p>
+                                        <p lang="pl">
+                                            Również, jeśli masz pomysł na to co chciałbyś zrobić dla dzieci w swoim sąsiedztwie, kraju lub miejscu, 
+                                            o którym wiesz, że dzieci potrzebują wsparcia lub po prostu masz jakieś konstruktywne uwagi do nas - 
+                                            prosimy skontaktuj się z nami.
+                                        </p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('individual-section')">>> Individual</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('individual-section')">
+                                        <span lang="en">>> Individual</span>
+                                        <span lang="pl">>> Osoba indywidualna</span>
+                                    </button>
+                                </li>
                                     <div id="individual-section" style="display: none;">
                                         <p>&#60;&#60; coming soon &#62;&#62;</p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('group-section')">>> Group of people</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('group-section')">
+                                        <span lang="en">>> Group of people</span>
+                                        <span lang="pl">>> Grupa ludzi</span>
+                                    </button>
+                                </li>
                                     <div id="group-section" style="display: none;">
                                         <p>&#60;&#60; coming soon &#62;&#62;</p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('private-section')">>> Private sector company</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('private-section')">
+                                        <span lang="en">>> Private sector company</span>
+                                        <span lang="pl">>> Prywatna firma</span>
+                                    </button>
+                                </li>
                                     <div id="private-section" style="display: none;">
                                         <p>&#60;&#60; coming soon &#62;&#62;</p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('public-section')">>> Public institutions</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('public-section')">
+                                        <span lang="en">>> Public institutions</span>
+                                        <span lang="pl">>> Instytucja publiczna</span>
+                                    </button>
+                                </li>
                                     <div id="public-section" style="display: none;">
                                         <p>&#60;&#60; coming soon &#62;&#62;</p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('ngo-section')">>> NGO</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('ngo-section')">
+                                        <span>>> NGO</span>
+                                    </button>
+                                </li>
                                     <div id="ngo-section" style="display: none;">
                                         <p>&#60;&#60; coming soon &#62;&#62;</p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('sponsor-section')">>> Sponsor</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('sponsor-section')">
+                                        <span>>> Sponsor</span>
+                                    </button>
+                                </li>
                                     <div id="sponsor-section" style="display: none;">
                                         <p>&#60;&#60; coming soon &#62;&#62;</p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('mentor-section')">>> Mentor</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('mentor-section')">
+                                        <span>>> Mentor</span>
+                                    </button>
+                                </li>
                                     <div id="mentor-section" style="display: none;">
                                         <p>&#60;&#60; coming soon &#62;&#62;</p>
                                     </div>
                             </ul>
                         </div>
+
                         <div id="projects-list-section" class="description" style="display: none;">
                             <ul>
-                                <li><button class="btn btn-link" onclick="displayElement('development-section')">>> Development</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('development-section')">
+                                        <span lang="en">>> Development</span>
+                                        <span lang="pl">>> Development</span>
+                                    </button>
+                                </li>
                                     <div id="development-section" style="display: none;">
                                         <p></p>
                                         <img class="project-link-img" src="img/kwiate-small.png" alt="Librafrica logo">
                                         <p></p>
-                                        <p>
+                                        <p lang="en">
                                             Doing several development projects in Africa, the founder of the Foundation found that the lack of qualitative 
                                             education in the rural areas is causing stagnation in growing populations and lack of progress. 
                                             Children in many African countries believe that education is the key and the future and we do we agree with them. 
                                             However, we know what kind of education can bring a real change.
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Biorąc udział w kilku projektach w Afryce, założycielka fundacji zdała sobie sprawę, że brak odpowiedniej 
+                                            edukacji w obszarach mniej rozwiniętych jest przyczyną stagnacji i zatrzymania rozwoju w środowiskach o wysokim 
+                                            współczynniku demograficznym. Dzieci w wielu krajach Afryki wierzą, że edukacja jest podstawą i kluczem do 
+                                            przyszłości, a my się z tym zgadzamy. Tym samym wiemy, jaki sposób edukacji może przynieść rzeczywiste zmiany a 
+                                            my chcemy im zapewnić dostęp do odpowiednich narzędzi, dzięki którym, poczują się gotowe do podjęcia wyzwania. 
+                                        </p>
+
+                                        <p lang="en">
                                             LibrAfrica project aims to equalize the development opportunities of children from rural areas in Africa and to 
                                             improve the quality of their education. Thanks to the access to development tools such as: books, maps, dictionaries, 
                                             logic, abstract and strategic games, instruments, computers - LibrAfrica strives to increase the level of knowledge, 
                                             but most importantly reading skills, critical, abstract and creative thinking that in a long perspective will improve 
                                             the quality of life among the poorest.
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Projekt LibrAfrica ma na celu wyrównanie szans dla dzieci z regionów wiejskich w Afryce i poprawę jakości ich edukacji. 
+                                            Dzięki dostępowi do narzędzi takich jak książki, mapy, słowniki, gry logiczne i strategiczne, instrumenty muzyczne, 
+                                            komputery - LibrAfrica dąży do poprawy poziomu wiedzy, ale przede wszystkim poprawy umiejętności czytania, 
+                                            krytycznego i kreatywnego myślenia, które w dłuższej perspektywie przyczyni się do poprawy jakości życia najbiedniejszych.
+                                        </p>
+
+                                        <p lang="en">
                                             Instead of fish, the LibrAfrica project wants to provide children in Africa with a fishing rod to catch them i.e. 
                                             tools for independent development of talents and predispositions regardless of the circumstances in which they were born.
                                         </p>
-                                        <a class="external-link" href="https://www.youtube.com/watch?v=-f-OVBPIk6c" target="_blank"><b>Librafrica on YouTube</b></a>
-                                        <p>
+                                        <p lang="pl">
+                                            Zamiast podawać gotową rybę, projekt LibrAfrica chce zapewnić dzieciom w Afryce wędkę, dzięki której będą mogły 
+                                            nauczyć się własnoręcznie łowić, rozwijając swoje talenty i predyspozycje, niezależnie od okoliczności w których 
+                                            się znalazły.
+                                        </p>
+
+                                        <a class="external-link" href="https://www.youtube.com/watch?v=-f-OVBPIk6c" target="_blank">
+                                            <b lang="en">Librafrica on YouTube</b>
+                                            <b lang="pl">Librafrica na YouTube</b>
+                                        </a>
+
+                                        <p lang="en">
                                             In 2018 we built and equipped the first LibrAfrica development center for children in Uganda. 
-                                            In 2019 Justyna Jarząbska wrote a project that was financed by the <a class="external-link" href="https://www.polskapomoc.gov.pl/Polish,Aid,160.html" target="_blank"><b>Polish Aid Fund</b></a> 
-                                            (<a class="external-link" href="https://www.msz.gov.pl/en/" target="_blank"><b>Polish Ministry of Foreign Affairs</b></a>) and two volunteers were sent there to buy 
+                                            In 2019 Justyna Jarząbska wrote a project that was financed by the <a class="external-link" href="https://www.polskapomoc.gov.pl/Polish,Aid,160.html" target="_blank"><b lang="en">Polish Aid Fund</b></a> 
+                                            (<a class="external-link" href="https://www.msz.gov.pl/en/" target="_blank"><b lang="en">Polish Ministry of Foreign Affairs</b></a>) and two volunteers were sent there to buy 
                                             more equipment and to open officially the library. Now, we are preparing the next LibrAfrica center for children 
                                             in Tanzania and on our map we have already next places to enhance children’s development. 
-                                            Please visit <a class="external-link" href="http://librafrica.org" target="_blank"><b>Librafrica website</b></a> to learn more.
+                                            Please visit <a class="external-link" href="http://librafrica.org" target="_blank"><b lang="en">Librafrica</b></a>
+                                             website to learn more.
                                         </p>
+                                        <p lang="pl">
+                                            W 2018 zbudowaliśmy i wyposażyliśmy pierwsze centrum LibrAfrica dla dzieci w Ugandzie. 
+                                            W 2019 Justyna Jarząbska napisała projekt, który został sfinansowany przez 
+                                            <a class="external-link" href="https://www.polskapomoc.gov.pl/Polish,Aid,160.html" target="_blank"><b lang="pl">Polską Pomoc</b></a> 
+                                            (<a class="external-link" href="https://www.msz.gov.pl/en/" target="_blank"><b lang="pl">Ministerstwo Spraw Zagranicznych</b></a>) and two volunteers were sent there to buy 
+                                            i dwójka wolontariuszy została wysłana do zakupu większej ilości sprzętu i otwarcia biblioteki. 
+                                            Obecnie planujemy kolejne centrum dla dzieci w Tanzanii i na mapie mamy już kolejne miejsca, 
+                                            w których możemy pracować na rzecz dzieci. Odwiedź proszę oficjalną stronę projektu 
+                                            <a class="external-link" href="http://librafrica.org" target="_blank"><b lang="pl">Librafrica</b></a>
+                                             aby dowiedzieć się więcej.
+                                        </p>
+
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('migration-section')">>> Migration</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('migration-section')">
+                                        <span lang="en">>> Migration</span>
+                                        <span lang="pl">>> Migration</span>
+                                    </button>
+                                </li>
                                     <div id="migration-section" style="display: none;">
-                                        <p>European Guardianship Network</p>
-                                        <p>The vision of the European Guardianship Network is to create a network that will be an inclusive and supportive 
+                                        <p lang="en">European Guardianship Network</p>
+                                        <p lang="pl">Europejska Sieć Pomocy</p>
+
+                                        <p lang="en">
+                                            The vision of the European Guardianship Network is to create a network that will be an inclusive and supportive 
                                             environment which will enable members to contribute to the development of safe, effective and consistent ways 
                                             of delivering high quality, child rights-based, and accessible guardianship services. The Network will be a welcoming
                                             and enabling forum for the development of best practice that will put the rights and best interests of separated 
                                             and unaccompanied children at the heart of its work thus leading to better outcomes for children and the 
                                             guardianship services who work with them.
                                         </p>
-                                        <p>The Touchstone-project will:</p>
+                                        <p lang="pl">
+                                            Wizją Europejskiej Sieci Pomocy jest tworzenie sieci, która będzie obejmować wzajemnie wspierające się środowiska 
+                                            pozwalające członkom przyczyniać się do rozwoju bezpiecznych, efektywnych i konsekwentnych sposobów dostarczania 
+                                            wysokiej jakości i dostępności usług opieki nad dziećmi. Sieć będzie otwartym forum do rozwoju najlepszych praktyk, 
+                                            dzięki którym prawa i interesy dzieci odseparowanych i bez opieki będą znajdować się w samym centrum ich pracy, 
+                                            co spowoduje osiąganie lepszych wyników przez dzieci i służby opiekuńcze, które z nimi pracują.
+                                        </p>
+
+                                        <p lang="en">The Touchstone project will:</p>
+                                        <p lang="pl">Projekt Touchstone zakłada:</p>
+
                                         <ul>
-                                            <li>- develop a network of guardianship authorities and agencies, (local) authorities and international and non-governmental organisations;</li>
-                                            <li>- exchange good practices, expertise and other relevant information;</li>
-                                            <li>- share ideas and cooperation on common challenges and cross border work;</li>
-                                            <li>- develop a vision on how to guide unaccompanied children and organise shared sessions to build capacity.</li>
+                                            <li lang="en">- develop a network of guardianship authorities and agencies, (local) authorities and international and non-governmental organisations;</li>
+                                            <li lang="pl">- Rozwój sieci organów opieki i agencji pomocowych, (lokalnych) organów i międzynarodowych agencji pozarządowych;</li>
+
+                                            <li lang="en">- exchange good practices, expertise and other relevant information;</li>
+                                            <li lang="pl">- Wymiana najlepszych praktyk, ekspertyz i innych ważnych informacji;</li>
+
+                                            <li lang="en">- share ideas and cooperation on common challenges and cross border work;</li>
+                                            <li lang="pl">- Dzielenie się pomysłami i praca nad wspólnymi wyzwaniami;</li>
+
+                                            <li lang="en">- develop a vision on how to guide unaccompanied children and organise shared sessions to build capacity.</li>
+                                            <li lang="pl">- Rozwój wizji tego jak poprowadzić dzieci pozostające bez opieki oraz organizacja otwartych sesji w celu rozszerzania zasięgu współpracy.</li>
                                         </ul>
-                                        <p>
+
+                                        <p lang="en">
                                             Our Foundation aims at creating a common mission in Poland in cooperation with other stakeholders. 
                                             Through the EGN the IICD will serve as a platform for discussion on the situation in the country, 
                                             ensuring a child-centered and child-rights based holistic approach. Special consideration will therefore be 
                                             given to participation of unaccompanied children and former unaccompanied children.
                                         </p>
+                                        <p lang="pl">
+                                            Nasz Fundacja ma na celu tworzenie wspólnej misji w Polsce we współpracy z innymi interesariuszami. 
+                                            Poprzez EGN, IICD będzie służyć jako platforma do dyskusji na temat sytuacji w państwie, zapewniając holistyczne 
+                                            podejście skoncentrowane na prawach dziecka. Szczególna uwaga będzie więc poświęcona opuszczonym dzieciom oraz 
+                                            byłym opuszczonym dzieciom. 
+                                        </p>
                                     </div>
-                                <li><button class="btn btn-link" onclick="displayElement('sustainable-edu-section')">>> Sustainable education</button></li>
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('sustainable-edu-section')">
+                                        <span lang="en">>> Sustainable education</span>
+                                        <span lang="pl">>> Zrównoważona edukacja</span>
+                                    </button>
+                                </li>
                                     <div id="sustainable-edu-section" style="display: none;">
-                                        <p>
+                                        <p lang="en">
                                             Holistic development of a human being is needed in order to create a mature individual. Our team wants to provide 
                                             for children the tools that will help them to establish consciously their identity providing the space for mental, 
                                             physical, psychological and spiritual growth.
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Rozwój holistyczny człowieka jest potrzebny do osiągania jego dojrzałości. Nasz zespół pragnie zapewnić dzieciom 
+                                            narzędzia, które pozwolą świadomie kształtować ich tożsamość poprzez dostarczanie przestrzeni na rozwój mentalny, 
+                                            fizycznym, psychologiczny oraz duchowy.
+                                        </p>
+
+                                        <p lang="en">
                                             Through our initiatives we aim to motivate children to multiply their talents, share their happiness with others.
                                         </p>
-                                        <p>
+                                        <p lang="pl">
+                                            Poprzez nasze inicjatywy, chcemy motywować dzieci do rozwijania i pomnażania talentów oraz dzielenia się swoim 
+                                            szczęściem z innymi.
+                                        </p>
+
+                                        <p lang="en">
                                             Our Foundation designs and delivers projects and trainings for children in kindergartens, schools, universities, 
                                             teachers, parents and all interested in children’s development partners on:
                                         </p>
+                                        <p lang="pl">
+                                            Nasza Fundacja tworzy i dostarcza projekty oraz szkolenia dla dzieci dla przedszkoli, szkół, uniwersytetów, 
+                                            nauczycieli, rodziców i wszystkich partnerów zainteresowanych rozwojem dzieci:
+                                        </p>
+
                                         <ul>
-                                            <li>- teaching science through experiences</li>
-                                            <li>- non-formal education methods and effective study techniques</li>
-                                            <li>- life skills</li>
-                                            <li>- global education</li>
-                                            <li>- human rights</li>
-                                            <li>- environment and conscious consumption</li>
-                                            <li>- civil society</li>
-                                            <li>- communication and auto-presentation skills</li>
-                                            <li>- entrepreneurship and job market</li>
-                                            <li>- programming and IT skills</li>
-                                            <li>- sport and health</li>
-                                            <li>- searching for information on the Internet and the information bubbles</li>
-                                            <li>- cyber crime and security on the Internet</li>
+                                            <li lang="en">- teaching science through experiences</li>
+                                            <li lang="en">- non-formal education methods and effective study techniques</li>
+                                            <li lang="en">- life skills</li>
+                                            <li lang="en">- global education</li>
+                                            <li lang="en">- human rights</li>
+                                            <li lang="en">- environment and conscious consumption</li>
+                                            <li lang="en">- civil society</li>
+                                            <li lang="en">- communication and auto-presentation skills</li>
+                                            <li lang="en">- entrepreneurship and job market</li>
+                                            <li lang="en">- programming and IT skills</li>
+                                            <li lang="en">- sport and health</li>
+                                            <li lang="en">- searching for information on the Internet and the information bubbles</li>
+                                            <li lang="en">- cyber crime and security on the Internet</li>
+
+                                            <li lang="pl">- Nauczanie nauk ścisłych poprzez eksperymenty</li>
+                                            <li lang="pl">- Nieformalne metody edukacji i efektywne techniki nauczania</li>
+                                            <li lang="pl">- Umiejętności życiowe</li>
+                                            <li lang="pl">- Edukacja globalna</li>
+                                            <li lang="pl">- Prawa człowieka</li>
+                                            <li lang="pl">- Środowisko i świadoma konsumpcja</li>
+                                            <li lang="pl">- Społeczeństwo obywatelskie</li>
+                                            <li lang="pl">- Komunikacja i umiejętności autoprezentacji</li>
+                                            <li lang="pl">- Przedsiębiorczość i rynek pracy</li>
+                                            <li lang="pl">- Programowanie i umiejętności IT</li>
+                                            <li lang="pl">- Sport i zdrowie</li>
+                                            <li lang="pl">- Szukanie informacji w internecie</li>
+                                            <li lang="pl">- Cyberprzestępczość w zagrożenia w internecie</li>
                                         </ul>
                                     </div>
-                                <li><button class="btn btn-link">>> Consulting</button></li>
+                                
+                                <li>
+                                    <button class="btn btn-link" onclick="displayElement('environment-protection-section')">
+                                        <span lang="en">>> Environment Protection</span>
+                                        <span lang="pl">>> Ochrona Środowiska</span>
+                                    </button>
+                                </li>
+                                <div id="environment-protection-section" style="display: none;">
+                                    <p lang="en">
+                                        We believe that we can take care of the state of our planet not only by changing ourselves, but also 
+                                        by teaching children, because when they grow up, taking care of the surrounding environment will be a natural 
+                                        habit for them.
+                                    </p>
+                                    <p lang="pl">
+                                        Wierzymy, że możemy zadbać o stan naszej planety nie tylko zmieniając siebie, ale również nauczając dzieci, 
+                                        bo gdy dorosną, dbanie o otaczające je środowisko będzie dla nich naturalnym nawykiem.
+                                    </p>
+
+                                    <p lang="en">
+                                        We believe that we can care for our plant not only by changing ourselves but also by teaching the children, 
+                                        because when they grow up, caring for the environment will be just a natural habit for them.
+                                    </p>
+                                    <p lang="pl">
+                                        Fundacja realizuje projekt “Poczuj Chemię z Tą Szansą” dla dzieci w wieku szkolnym. Projekt polega na 
+                                        prowadzeniu warsztatów z zakresu tworzenia naturalnych kosmetyków, świeczek naturalnych, środków chemii 
+                                        gospodarczej, naturalnych ozdób świątecznych itd.
+                                    </p>
+
+                                    <p lang="en">
+                                        Actions taken are aimed at spreading knowledge about ecology and environmental protection through the use 
+                                        of alternatives to products commercially produced and harmful to the environment and human health. 
+                                        The workshops simultaneously promote a campaign for a healthy lifestyle, encouraging children to choose 
+                                        solutions that do not generate large amounts of plastic and are free of harmful substances that power 
+                                        our planet. The project is designed to convince children that responsibility for the planet begins in their 
+                                        home and consumer awareness of children plays a very important role in society.
+                                    </p>
+                                    <p lang="pl">
+                                        Podjęte działania mają na celu szerzenie wiedzy na temat ekologii oraz ochrony środowiska poprzez stosowania 
+                                        alternatywy do produktów komercyjnie produkowanych i szkodliwych dla środowiska i zdrowia człowieka. 
+                                        Warsztaty jednocześnie promują kampanię na rzecz zdrowego stylu życia, zachęcając dzieci by wybierać 
+                                        rozwiązania, które nie generują dużych ilości plastiku oraz są bez szkodliwych substancji, które zasilają 
+                                        naszą planetę. Projekt ma za zadanie przekonać dzieci, że odpowiedzialność za planetę rozpoczyna się w ich 
+                                        domu i świadomość konsumencka dzieci odgrywa bardzo ważną rolę w społeczeństwie.
+                                    </p>
+
+                                </div>
+
+                                <li>
+                                    <button class="btn btn-link">
+                                        <span lang="en">>> Consulting</span>
+                                        <span lang="pl">>> Doradztwo</span>
+                                    </button>
+                                </li>
+
                             </ul>
                         </div>
+
                         <div id="methodology-list-section" class="description" style="display: none;">
                             <ul>
-                                <li><button class="btn btn-link">>> Research</button></li>
-                                <li><button class="btn btn-link">>> Children's voice</button></li>
-                                <li><button class="btn btn-link">>> Our tools</button></li>
-                                <li><button class="btn btn-link">>> Inspiration</button></li>
-                                <li><button class="btn btn-link">>> Reflections</button></li>
+                                <li>
+                                    <button class="btn btn-link">
+                                        <span lang="en">>> Research</span>
+                                        <span lang="pl">>> Badania</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn btn-link">
+                                        <span lang="en">>> Children's voice</span>
+                                        <span lang="pl">>> Głos dzieci</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn btn-link">
+                                        <span lang="en">>> Our tools</span>
+                                        <span lang="pl">>> Nasze narzędzia</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn btn-link">
+                                        <span lang="en">>> Inspiration</span>
+                                        <span lang="pl">>> Inspiracje</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn btn-link">
+                                        <span lang="en">>> Reflections</span>
+                                        <span lang="pl">>> Refleksje</span>
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                         <div id="contact-section" class="description" style="display: none;">
                             <div>
-                                <p>Phone: +48 881 657 690</p>
-                                <p>Email: info@forchildrensdevelopment.org</p>
-                                <p>If you would like to support us, you can make a donation to the following bank account:</p>
-                                <p>Account number: 41 1240 1037 1111 0010 9280 6310</p>
+                                <p>
+                                    <span lang="en">phone: </span>
+                                    <span lang="pl">tel.: </span>
+                                    +48 881 657 690
+                                </p>
+                                
+                                <p>e-mail: info@forchildrensdevelopment.org</p>
+                                
+                                <p lang="en">If you would like to support us, you can make a donation to the following bank account:</p>
+                                <p lang="pl">Jeśli chciałbyś nas wesprzeć, możesz dokonać dotacji na poniższe konto:</p>
+                                
+                                <p>
+                                    <span lang="en">Account number: </span>
+                                    <span lang="pl">Numer konta: </span>
+                                    41 1240 1037 1111 0010 9280 6310
+                                </p>
+
                                 <p>IBAN: PL 41 1240 1037 1111 0010 9280 6310</p>
+
                                 <p>SWIFT/BIC: PKOPPLPW</p>
                             </div>
                         </div>
