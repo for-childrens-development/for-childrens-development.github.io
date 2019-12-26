@@ -150,3 +150,21 @@ p.account {
     transition: all 1s ease-in-out;
   }
 }
+
+.toTop {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  background-color: transparent;
+  border-color: grey;
+  opacity: 0.4;
+}
+
+.toTop:hover {
+  background-color: grey;
+}
+
+.toTop .material-icons { 
+  color: rgba(255, 255, 255, 1); 
+  font-size: 6vmin;
+}

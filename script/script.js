@@ -30,3 +30,17 @@ function displayElement(el) {
 }
 
 document.getElementById("video-background").playbackRate = 0.5;
+
+/*Scroll to the top */
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 500) {
+    $('.toTop').fadeIn();
+  } else {
+    $('.toTop').fadeOut();
+  }
+});
+
+$('.toTop').on('click', function(event) {
+  event.preventDefault();
+  $('html, body').animate({ scrollTop: 0 }, 'slow');         
+});
