@@ -1,11 +1,10 @@
 var c = document.getElementById('moveable-content');
-var btn = document.getElementsByClassName('btn-lg');
+var btn = document.getElementsByClassName('move-content');
 Array.from(btn).forEach(element => {
     element.addEventListener('click', function(ev){
-        c.style.marginTop = '0%';
+        $('html, body').animate({scrollTop: '+=150px'}, 800);
     },false);    
 });
-
 
 function displayElementHideList(el, list) {
     var x = document.getElementById(el);
