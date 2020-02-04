@@ -139,6 +139,15 @@ p.account {
   opacity: 0.7;
 }
 
+.social-link-btn {
+  opacity: 0.7;
+  position: absolute;
+  align-self: right; 
+  right: 2%;
+  margin-top: 2%; 
+  cursor: pointer;
+}
+
 .social-link-btn:hover {
   background-color: transparent !important;
 }
